@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RegistrationForm</title>
+
+        <body>
+            <form action="/register" method="post">
+                <h1>Registration Form</h1>
+                <div>
+                    <label for="first_name"><strong>First Name:*</strong></label>
+                    <input type="text" name="first_name">
+                </div>
+                <div>
+                    <label for="Last_Name">Last Name:*</label>
+                    <input type="text" name="Last_Name">
+                </div>
+                <div>
+                    <label for="Email">Email:*</label>
+                    <input type="text" name="email" placeholder="Your email..." >
+                </div>
+                <div>
+                    <label for="Password">Password:*</label>
+                    <input type="password" name="password">
+                </div>
+                <div>
+                    <label for="confirm_password">Confirm Password:*</label>
+                    <input type="confirm_password" name="confirm_password">
+                </div>
+                <div>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" name="dob">
+                </div>
+                <h4r>Gender Identity:</h4r>
+                <div>
+                    <input type="radio" name="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="non_binary">
+                    <label for="non_binary">Non-binary</label>
+                    <input type="radio" name="i_prefer_not_to_answer">
+                    <label for="i_prefer_not_to_answer">I prefer not to answer</label>
+                </div>
+                <h4r>A short description about myself</h4r>
+                <div>
+                    <textarea name="comment" cols="40" rows="10">
+                    </textarea>
+                </div>
+                <div>
+                    <label for="favorite_languages">Favorite Language:</label>
+                        <select name="software_languages">
+                            <option>Javascript</option>
+                            <option>Python</option>
+                            <option>C++</option>
+                            <option>C#</option>
+                        </select>
+                </div>
+                <div>
+                    <input type="checkbox" name="recieve_updates" id="recieve_updates">
+                    <label for="recieve_updates">Yes, I would like to recieve periodic email updates</label>
+                </div>
+                <input type="submit" value="Create Account" > 
+                <div>
+                    <label for="required_field">*indicates a required field</label>
+                </div>  
+                
+            
+            </form>
+            
+            
+            
+        </body>
+    </head>
+</html>
